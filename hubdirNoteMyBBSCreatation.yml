@@ -1,0 +1,40 @@
+1.swagger-交互文档:
+    http://localhost:8080   启动swagger-ui
+    www.easy-mock.com
+2.前端:
+    user: 
+    admin:    http://localhost:9528
+    
+    
+    
+0.所用:
+    技术:
+        npm
+        swagger
+        nuxt
+        element-ui
+        iview
+        easy-mock    
+        js-cookie
+        vue-infinite-scroll
+        logstash
+        
+        springBoot
+        springJpaa
+        springMvc
+        springSecurity
+        jwt
+    软件:
+        elasticsearch
+        git
+        github
+        tortoisGit
+        google
+        navicat
+        idea
+        webstorm
+        mariaDB
+        photoshop
+        redis
+        rabbitMQ
+        notePad++

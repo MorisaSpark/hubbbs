@@ -1,0 +1,64 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: hubbbs-user #指定服务名
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.161.154:3306/hubbbs?characterEncoding=UTF8&useSSL=false
+    username: root
+    password: IntelliJ
+  data:
+    mongodb:
+      host: 39.108.161.154
+      database: hubbbs
+    elasticsearch:
+      cluster-nodes: 39.108.161.154:9300
+      cluster-name: elastic-cluster
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:  # 解决hibernate字段将表字段由驼峰式转为下划线的问题
+      naming:
+        physical-strategy:
+          org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  redis:
+    host: 39.108.161.154
+  rabbitmq:
+    host: 39.108.161.154
+
+jwt:
+  config:
+    key: hubbbskey
+    ttl: 36000000
+#logging:
+#  path:
+#    ${user.home}/logs/
+#  config:
+#    classpath:
+#      logback-spring.xml
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:6868/eureka
+#  instance:
+#    prefer-ip-address: true
+pojo:
+  user:
+    id: 1
+    nickname: 无铭
+    sex: 0
+    grade: 0
+    createTime: 0
+    lastLoginTime: 0
+    lastLoginTimeB: 0
+    lastRenameTime: 0
+    cookieNum: 0.0
+    icon: https://hub-1258341727.cos.ap-guangzhou.myqcloud.com/hubbbs/public/akalin.jpg
+    college: 湖工大
+    major: 信息管理与信息系统
+    Summary: 无
+    isBan: 0
+    postNum: 0
+    fansNum: 0
+    attenterNum: 0
